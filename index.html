@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Cuisine sans gluten au Thermomix : 10 recettes (PDF offert) · La Cuisine de Christine</title>
+  <meta name="description" content="10 recettes sans gluten au Thermomix, de l'entrée au dessert, avec tous les réglages temps, température et vitesse. Guide PDF offert par Christine, sans inscription." />
+  <meta property="og:title" content="Cuisine sans gluten au Thermomix : 10 recettes offertes" />
+  <meta property="og:description" content="De la farine de riz maison au fondant au chocolat : 10 recettes sans gluten avec tous les réglages Thermomix. PDF de 14 pages, sans inscription." />
+  <meta property="og:image" content="assets/p-01.jpg" />
+  <style>
+    @font-face{font-family:'Fredoka';font-weight:500;font-display:swap;src:url(assets/fonts/fredoka-latin-500-normal.woff2) format('woff2');}
+    @font-face{font-family:'Fredoka';font-weight:600;font-display:swap;src:url(assets/fonts/fredoka-latin-600-normal.woff2) format('woff2');}
+    @font-face{font-family:'Fredoka';font-weight:700;font-display:swap;src:url(assets/fonts/fredoka-latin-700-normal.woff2) format('woff2');}
+    @font-face{font-family:'Nunito';font-weight:400;font-display:swap;src:url(assets/fonts/nunito-latin-400-normal.woff2) format('woff2');}
+    @font-face{font-family:'Nunito';font-weight:600;font-display:swap;src:url(assets/fonts/nunito-latin-600-normal.woff2) format('woff2');}
+    @font-face{font-family:'Nunito';font-weight:700;font-display:swap;src:url(assets/fonts/nunito-latin-700-normal.woff2) format('woff2');}
+    @font-face{font-family:'Nunito';font-weight:800;font-display:swap;src:url(assets/fonts/nunito-latin-800-normal.woff2) format('woff2');}
+
+    :root{ --g:#15C450; --gd:#0B8F39; --gl:#E7F8EC; --ink:#1E2A23; --muted:#5E6B63; --line:#E3E8E4; --cream:#FAFAF7; --white:#fff; }
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family:'Nunito',system-ui,sans-serif; color:var(--ink); background:var(--white); line-height:1.6; font-size:17px; -webkit-font-smoothing:antialiased; }
+    h1,h2,h3,.fk{ font-family:'Fredoka',system-ui,sans-serif; }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; }
+    .container{ width:100%; max-width:1140px; margin:0 auto; padding:0 24px; }
+
+    /* Bulle verte = sous-titres des vidéos ; carte blanche = carte « Étapes » */
+    .bubble{ display:inline-block; background:var(--g); color:#fff; font-family:'Fredoka'; font-weight:700; border-radius:14px; padding:5px 14px; line-height:1.2; text-shadow:0 1px 2px rgba(0,0,0,.18); }
+    .card{ background:#fff; border-radius:22px; box-shadow:0 4px 18px rgba(20,60,35,.08); }
+
+    header{ position:sticky; top:0; z-index:50; background:rgba(250,250,247,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+    .nav{ display:flex; align-items:center; justify-content:space-between; height:68px; }
+    .brand{ font-family:'Fredoka'; font-weight:700; font-size:19px; text-decoration:none; line-height:1.1; }
+    .brand span{ color:var(--g); }
+    .nav-cta{ font-family:'Fredoka'; font-weight:600; font-size:15px; text-decoration:none; color:var(--gd); }
+
+    .btn{ display:inline-flex; align-items:center; gap:12px; background:var(--g); color:#fff; font-family:'Fredoka'; font-weight:700; font-size:18px; padding:17px 32px; border-radius:16px; text-decoration:none; box-shadow:0 6px 0 var(--gd); transition:transform .15s, box-shadow .15s; text-shadow:0 1px 2px rgba(0,0,0,.15); }
+    .btn:hover{ transform:translateY(2px); box-shadow:0 4px 0 var(--gd); }
+    .btn svg{ width:22px; height:22px; flex:none; }
+    .btn-light{ background:#fff; color:var(--gd); box-shadow:0 6px 0 rgba(0,0,0,.15); text-shadow:none; }
+    .btn-light:hover{ box-shadow:0 4px 0 rgba(0,0,0,.15); }
+
+    .hero{ background:var(--cream); padding:80px 0 90px; overflow:hidden; }
+    .hero-inner{ display:grid; grid-template-columns:1.1fr .9fr; gap:64px; align-items:center; }
+    .hero h1{ font-size:clamp(38px,5.2vw,62px); line-height:1.04; font-weight:700; margin:22px 0 22px; }
+    .hero h1 .hl{ color:var(--g); }
+    .lead{ font-size:19px; color:var(--muted); max-width:560px; }
+    .meta{ display:flex; flex-wrap:wrap; gap:10px 24px; margin:26px 0 34px; font-size:15px; color:var(--muted); font-weight:600; }
+    .meta span::before{ content:""; display:inline-block; width:9px; height:9px; background:var(--g); border-radius:50%; margin-right:8px; vertical-align:middle; }
+    .note{ display:block; margin-top:18px; font-size:15px; color:var(--muted); }
+    .cover{ position:relative; display:block; transform:rotate(2.5deg); border-radius:14px; overflow:hidden; box-shadow:0 30px 60px rgba(16,40,24,.22); transition:transform .3s; }
+    .cover:hover{ transform:rotate(0) translateY(-4px); }
+    .stepcard{ position:absolute; top:-18px; left:-22px; padding:12px 18px 14px; transform:rotate(-4deg); z-index:2; }
+    .stepcard small{ display:block; font-family:'Fredoka'; font-weight:600; color:var(--g); font-size:13px; }
+    .stepcard b{ font-family:'Fredoka'; font-weight:700; color:var(--g); font-size:44px; line-height:1; }
+    .stepcard b i{ font-style:normal; font-size:20px; color:#8C958F; font-weight:500; }
+    .cover-wrap{ position:relative; max-width:440px; justify-self:center; }
+
+    .section{ padding:100px 0; }
+    .section + .section{ border-top:1px solid var(--line); }
+    .head{ max-width:720px; margin-bottom:48px; }
+    .head h2{ font-size:clamp(30px,3.8vw,44px); line-height:1.1; font-weight:700; margin-top:14px; }
+    .head p{ color:var(--muted); font-size:18px; margin-top:12px; }
+    .tag{ font-size:14px; }
+
+    .recipes{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px 22px; list-style:none; }
+    .recipes li{ display:flex; gap:16px; align-items:center; padding:16px 20px; }
+    .recipes li b{ font-family:'Fredoka'; font-weight:700; color:var(--g); font-size:30px; line-height:1; min-width:44px; }
+    .recipes li b i{ font-style:normal; font-size:14px; color:#8C958F; font-weight:500; }
+    .recipes li strong{ font-family:'Fredoka'; font-weight:600; font-size:19px; display:block; line-height:1.2; }
+    .recipes li span{ color:var(--muted); font-size:15px; }
+    .extras{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:26px; }
+    .extras div{ background:var(--gl); border-radius:20px; padding:22px; }
+    .extras strong{ font-family:'Fredoka'; font-weight:600; color:var(--gd); font-size:18px; display:block; margin-bottom:4px; }
+    .extras span{ font-size:15px; color:#36443B; }
+
+    .band{ background:var(--g); color:#fff; text-align:center; padding:90px 0; }
+    .band h2{ font-size:clamp(30px,4vw,46px); font-weight:700; text-shadow:0 1px 3px rgba(0,0,0,.15); }
+    .band p{ margin:12px 0 34px; font-size:18px; font-weight:600; opacity:.95; }
+    .band small{ display:block; margin-top:20px; font-size:14px; opacity:.85; font-weight:600; }
+
+    .figures{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .figures div{ padding:32px 28px; }
+    .figures b{ display:block; font-family:'Fredoka'; font-weight:700; font-size:54px; line-height:1; color:var(--g); }
+    .figures strong{ display:block; margin:14px 0 6px; font-family:'Fredoka'; font-weight:600; font-size:19px; }
+    .figures span{ color:var(--muted); font-size:15px; }
+
+    .previews{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+    .previews figure{ margin:0; }
+    .previews img{ width:100%; aspect-ratio:210/297; object-fit:cover; border-radius:12px; box-shadow:0 14px 30px rgba(16,40,24,.12); cursor:zoom-in; }
+    .previews figcaption{ font-size:15px; color:var(--muted); margin-top:12px; font-weight:600; }
+
+    .author{ display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:center; }
+    .author-photo{ border-radius:26px; overflow:hidden; aspect-ratio:4/5; position:relative; }
+    .author-photo img{ width:100%; height:100%; object-fit:cover; }
+    .author-photo .bubble{ position:absolute; left:16px; right:16px; bottom:16px; text-align:center; font-size:18px; padding:8px 12px; }
+    .author h2{ font-size:clamp(30px,3.6vw,42px); line-height:1.1; margin:14px 0 14px; }
+    .author p{ color:var(--muted); font-size:18px; }
+    .quote{ background:var(--g); color:#fff; border-radius:22px; padding:22px 26px; margin:24px 0; }
+    .quote p{ color:#fff; font-family:'Fredoka'; font-weight:600; font-size:23px; line-height:1.25; text-shadow:0 1px 2px rgba(0,0,0,.15); }
+    .paths{ display:grid; gap:10px; margin-top:8px; }
+    .paths div{ display:flex; gap:12px; align-items:baseline; font-size:16px; }
+    .paths b{ font-family:'Fredoka'; font-weight:600; color:var(--gd); white-space:nowrap; }
+    .todo{ display:inline-block; background:#FFE9A8; color:#5B4300; border-radius:8px; padding:3px 10px; font-weight:700; font-size:15px; margin-top:18px; }
+
+    footer{ background:var(--ink); color:rgba(255,255,255,.75); padding:40px 0; font-size:14px; }
+    footer .container{ display:flex; flex-direction:column; gap:10px; }
+    footer strong{ color:#fff; font-family:'Fredoka'; font-weight:600; font-size:17px; }
+    footer strong span{ color:var(--g); }
+
+    .zoom{ position:fixed; inset:0; background:rgba(8,14,10,.92); display:none; align-items:center; justify-content:center; z-index:2000; padding:24px; cursor:zoom-out; }
+    .zoom.open{ display:flex; }
+    .zoom img{ max-height:92vh; max-width:100%; border-radius:8px; }
+
+    @media (max-width:900px){
+      .hero{ padding:50px 0 70px; }
+      .hero-inner{ grid-template-columns:1fr; gap:56px; }
+      .cover-wrap{ max-width:340px; }
+      .recipes,.extras,.figures{ grid-template-columns:1fr; }
+      .previews{ grid-template-columns:1fr 1fr; gap:14px; }
+      .previews figure:last-child{ grid-column:1 / -1; max-width:50%; justify-self:center; }
+      .section{ padding:70px 0; }
+      .author{ grid-template-columns:1fr; gap:30px; }
+      .author-photo{ max-width:340px; }
+      .btn{ width:100%; justify-content:center; padding:17px 20px; }
+      .nav-cta{ display:none; }
+    }
+    @media (max-width:400px){ .container{ padding:0 16px; } .stepcard{ left:-8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <a href="#" class="brand">La Cuisine de <span>Christine</span></a>
+      <a href="#telecharger" class="nav-cta">Télécharger le guide ↓</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="bubble tag">Guide offert · PDF de 14 pages</span>
+        <h1>Cuisine sans gluten <span class="hl">au Thermomix</span> : 10 recettes</h1>
+        <p class="lead">De la farine de riz maison au fondant au chocolat, 10 recettes naturellement sans gluten, avec tous les réglages temps, température et vitesse. Vous suivez les étapes, le Thermomix fait le reste.</p>
+        <div class="meta"><span>PDF · 14 pages · 4 Mo</span><span>Réglages TM6 et TM7</span><span>De l'entrée au dessert</span></div>
+        <a class="btn" href="assets/Cuisine-sans-gluten-au-Thermomix-La-Cuisine-de-Christine.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          Télécharger le guide gratuit
+        </a>
+        <span class="note">Immédiat, sans formulaire ni inscription.</span>
+      </div>
+      <div class="cover-wrap">
+        <div class="card stepcard"><small>Recettes</small><b>10<i>/10</i></b></div>
+        <a class="cover" href="assets/Cuisine-sans-gluten-au-Thermomix-La-Cuisine-de-Christine.pdf" download aria-label="Télécharger le guide">
+          <img src="assets/p-01.jpg" alt="Couverture du guide Cuisine sans gluten au Thermomix" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <span class="bubble tag">Au menu</span>
+        <h2>Les 10 recettes du guide</h2>
+        <p>Une recette par page, avec la liste des ingrédients, les étapes numérotées et les réglages à taper sur l'écran.</p>
+      </div>
+      <ol class="recipes">
+        <li class="card"><b>1<i>/10</i></b><div><strong>Farine de riz maison</strong><span>La base de tout le guide, en 2 minutes</span></div></li>
+        <li class="card"><b>2<i>/10</i></b><div><strong>Velouté potimarron et châtaigne</strong><span>La soupe d'hiver réconfortante</span></div></li>
+        <li class="card"><b>3<i>/10</i></b><div><strong>Galettes de sarrasin</strong><span>La vraie galette bretonne</span></div></li>
+        <li class="card"><b>4<i>/10</i></b><div><strong>Risotto aux champignons</strong><span>Crémeux sans remuer une seule fois</span></div></li>
+        <li class="card"><b>5<i>/10</i></b><div><strong>Quiche sans pâte aux poireaux</strong><span>Toute la quiche, sans la pâte</span></div></li>
+        <li class="card"><b>6<i>/10</i></b><div><strong>Cabillaud, légumes et riz au Varoma</strong><span>Un repas complet en une seule cuisson</span></div></li>
+        <li class="card"><b>7<i>/10</i></b><div><strong>Béchamel à la fécule de maïs</strong><span>La sauce de tous vos gratins</span></div></li>
+        <li class="card"><b>8<i>/10</i></b><div><strong>Crêpes à la farine de riz</strong><span>Fines et légères</span></div></li>
+        <li class="card"><b>9<i>/10</i></b><div><strong>Fondant au chocolat et amande</strong><span>Zéro farine, 100 % fondant</span></div></li>
+        <li class="card"><b>10<i>/10</i></b><div><strong>Crème vanille</strong><span>La crème dessert de notre enfance</span></div></li>
+      </ol>
+      <div class="extras">
+        <div><strong>6 règles du sans gluten</strong><span>Étiquettes, bol bien lavé, farines rangées à part : les bons réflexes avant de commencer.</span></div>
+        <div><strong>Une « vigilance gluten » par recette</strong><span>Les ingrédients à vérifier, comme les bouillons, les lardons ou le chocolat.</span></div>
+        <div><strong>L'astuce de Christine</strong><span>Un conseil pratique à chaque recette, pour la réussir du premier coup.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="telecharger">
+    <div class="container">
+      <h2>Téléchargez le guide</h2>
+      <p>Le PDF est à vous tout de suite, sans formulaire ni inscription.</p>
+      <a class="btn btn-light" href="assets/Cuisine-sans-gluten-au-Thermomix-La-Cuisine-de-Christine.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Télécharger le PDF
+      </a>
+      <small>14 pages · format A4 · prêt à imprimer</small>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <span class="bubble tag">En 3 chiffres</span>
+        <h2>Le sans gluten, sans prise de tête</h2>
+      </div>
+      <div class="figures">
+        <div class="card"><b>10</b><strong>recettes du quotidien</strong><span>Entrée, plat, sauce, crêpes et desserts : de quoi tenir toute la semaine.</span></div>
+        <div class="card"><b>0 g</b><strong>de farine de blé</strong><span>Riz, sarrasin, fécule de maïs et amande : que des ingrédients naturellement sans gluten.</span></div>
+        <div class="card"><b>1 min 30</b><strong>pour votre farine de riz</strong><span>150 g de riz, vitesse 10, et votre farine maison est prête.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <span class="bubble tag">Aperçu</span>
+        <h2>Un coup d'œil à l'intérieur</h2>
+        <p>Touchez une page pour l'agrandir. Le reste vous attend dans le PDF.</p>
+      </div>
+      <div class="previews">
+        <figure><img src="assets/p-03.jpg" alt="Page de la recette de farine de riz maison" /><figcaption>La farine de riz maison</figcaption></figure>
+        <figure><img src="assets/p-07.jpg" alt="Page de la recette de quiche sans pâte aux poireaux" /><figcaption>La quiche sans pâte aux poireaux</figcaption></figure>
+        <figure><img src="assets/p-13.jpg" alt="Page de présentation de Christine" /><figcaption>Qui est Christine ?</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--cream)">
+    <div class="container author">
+      <div class="author-photo">
+        <img src="assets/christine.jpg" alt="Christine souriante dans sa cuisine, devant son Thermomix TM7" />
+        <span class="bubble">Bonjour, moi c'est Christine !</span>
+      </div>
+      <div>
+        <span class="bubble tag">Qui a préparé ce guide</span>
+        <h2>Christine, conseillère Thermomix depuis 7 ans</h2>
+        <p>Ce que j'aime par-dessus tout, c'est partager. Dans mes vidéos comme dans ce guide, je vous montre une cuisine maison simple, rapide et économique, avec toutes les petites astuces qui font gagner du temps chaque jour.</p>
+        <div class="quote"><p>« J'ai remboursé mon Thermomix en moins d'un an. Ce qui coûte, c'est de ne pas l'avoir. »</p></div>
+        <div class="paths">
+          <div><b>Pas de Thermomix ?</b><span>On se fait un appel de 30 minutes et je vous montre comment il fonctionne.</span></div>
+          <div><b>Déjà un Thermomix ?</b><span>Passez à la vitesse supérieure avec le TM7.</span></div>
+          <div><b>Un TM7 ?</b><span>Je vous partage mes astuces pour en tirer le meilleur.</span></div>
+        </div>
+        <span class="todo">[À compléter : téléphone, e-mail ou lien de réservation]</span>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>La Cuisine de <span>Christine</span> au Thermomix</strong>
+      <span>Thermomix® est une marque déposée de Vorwerk. Ce guide est indépendant et n'est ni édité ni approuvé par Vorwerk. En cas de maladie cœliaque ou d'allergie, vérifiez chaque produit et demandez conseil à votre médecin.</span>
+    </div>
+  </footer>
+
+  <div class="zoom" id="zoom"><img id="zoomImg" alt="" /></div>
+  <script>
+    (function(){
+      var zoom = document.getElementById('zoom'), zi = document.getElementById('zoomImg');
+      document.querySelectorAll('.previews img').forEach(function(img){
+        img.addEventListener('click', function(){ zi.src = img.src; zi.alt = img.alt; zoom.classList.add('open'); });
+      });
+      zoom.addEventListener('click', function(){ zoom.classList.remove('open'); });
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') zoom.classList.remove('open'); });
+    })();
+  </script>
+</body>
+</html>
